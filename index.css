@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #8d8d8d;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.input {
+  max-width: 150px;
+  font-family: "Segoe UI", Arial, serif;
+  font-weight: 700;
+  padding: 10px 10px 12px 15px;
+  font-size: 25px;
+  line-height: 20px;
+  color: #6e6767;
+  text-shadow: 1px 1px 1px #f1f1f1;
+  margin-right: 10px;
+  border: 1px solid #565656;
+  border-radius: 10px;
+  background: #d0d0d1;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 3px 3px 5px #858484, inset -3px -3px 5px #f1f1f1;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 1px #727272, inset -1px -1px 1px #f2f2f2;
+  outline: none;
+}
+
+.button {
+  padding: 7px 40px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Segoe UI", Arial, serif;
+  transition: all 0.3s;
+  background: #d0d0d1;
+  border: 1px solid #565656;
+  border-radius: 10px;
+  color: #6e6767;
+  text-shadow: 1px 1px 1px #f2f2f2;
+  box-shadow: inset 0 0 0 1px #f1f1f1;
+}
+
+.button:active {
+  background: #b6b6b6;
+}
+
+span {
+  font-family: "Segoe UI", serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px #b9b9b9;
+  color: #565656;
+}
+
+@media (max-width: 350px) {
+  .button {
+    padding: 7px 10px;
+  }
+}
